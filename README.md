@@ -9,6 +9,9 @@ I spent two and a half years running applied ML pipelines for nine enterprise re
 ## Projects
 
 - [ALIGN — AI Fitness Coaching Platform](#align--ai-fitness-coaching-platform)
+- [RxGene: Pre-Prescription Pharmacogenomics Check (Hackachusetts 2026)](#rxgene-pre-prescription-pharmacogenomics-check-hackachusetts-2026)
+- [Site Safety Watch (Dell x NVIDIA GB10 Hackathon)](#site-safety-watch-dell-x-nvidia-gb10-hackathon)
+- [Canary Pact: AI Decision Simulator (Hackathon)](#canary-pact-ai-decision-simulator-hackathon)
 - [AI Study Tutor (in progress)](#ai-study-tutor-in-progress)
 - [Boston Housing Regression](#boston-housing-regression)
 
@@ -26,6 +29,34 @@ Full-stack AI fitness coaching app pairing a Claude-powered agent with real comp
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)
+
+### RxGene: Pre-Prescription Pharmacogenomics Check (Hackachusetts 2026)
+
+> Your genes don't change. Your prescriptions do.
+
+When a clinician adds a medication, RxGene re-checks the patient's existing genetic test results against CPIC guidelines and their current medications. That catches phenoconversion: a patient who is genetically a normal metabolizer but behaves like a poor one because another drug blocks the enzyme. Built by a three-person team in the Biotech & Healthcare track. I owned the engine, APIs, consult agent, tests and UI integration, built with Kiro CLI one scoped brief at a time, and nothing was committed until all 26 hand-reviewed test patients passed.
+
+[Repo](https://github.com/hemnaath04/rxgene) · [Live demo](https://rxgene.vercel.app)
+
+`TypeScript` `React` `CDS Hooks` `openFDA` `Kiro CLI`
+
+### Site Safety Watch (Dell x NVIDIA GB10 Hackathon)
+
+> An always-on safety agent that watches site cameras, spots a blocked exit, and posts it to Slack with the evidence frame, the OSHA rule and a fix to approve.
+
+All inference runs locally on one Dell Pro Max with GB10, so raw video never leaves the box. I owned the Watcher, the component that turns a camera stream into clean, de-duplicated hazard events: 18 Python modules covering frame sampling, a motion gate, the local vision client, validation, de-duplication, the SQLite store and the CLI the agent calls.
+
+[Repo](https://github.com/hemnaath04/site-safety-watch)
+
+`Python` `OpenCV` `vLLM (Qwen3 35B NVFP4)` `SQLite`
+
+### Canary Pact: AI Decision Simulator (Hackathon)
+
+> Shows what a proposed cost cut would break before anyone approves it.
+
+Department AI agents investigate a modeled company and surface the dependencies a spreadsheet misses. I owned the company model the simulation runs on: 156 typed entities and 121 edges across 9 departments, generated deterministically so every run reproduces byte for byte, with a load-bearing dependency planted outside the edge list so the agents are scored on what they discover.
+
+`Python` `Pydantic` `JSON Schema` `multi-agent LLM simulation`
 
 ### AI Study Tutor (in progress)
 
@@ -53,9 +84,9 @@ Classical ML artifact: regression modeling and feature engineering on the Boston
 
 ## Before this
 
-Mad Street Den (View.AI), Chennai — AI Product Operations & Quality Analyst, ~2.5 years, owning classification-model quality and delivery across nine enterprise clients (Saks Fifth Avenue, Inditex/Zara, PVH, Fairprice, Landmark, Azadea) at a 95%+ accuracy bar.
+Mad Street Den (View.AI), Chennai — AI Product Operations & Quality Analyst, ~2.5 years, owning classification-model quality and delivery for nine enterprise retail clients across seven countries at a 95%+ accuracy bar.
 
-Now: MS in Computer Science, Northeastern University (Khoury College), Jan 2026 – May 2028.
+Now: MS in Computer Science, Northeastern University (Khoury College), Jan 2026 – May 2028, and teaching assistant for Human-Centered AI (ARTG 6460).
 
 ## Talk to me
 
