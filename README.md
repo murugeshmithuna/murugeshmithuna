@@ -12,8 +12,6 @@ I spent two and a half years running applied ML pipelines for nine enterprise re
 - [RxGene: Pre-Prescription Pharmacogenomics Check (Hackachusetts 2026)](#rxgene-pre-prescription-pharmacogenomics-check-hackachusetts-2026)
 - [Site Safety Watch (Dell x NVIDIA GB10 Hackathon)](#site-safety-watch-dell-x-nvidia-gb10-hackathon)
 - [Canary Pact: AI Decision Simulator (Hackathon)](#canary-pact-ai-decision-simulator-hackathon)
-- [AI Study Tutor (in progress)](#ai-study-tutor-in-progress)
-- [Boston Housing Regression](#boston-housing-regression)
 
 ### ALIGN — AI Fitness Coaching Platform
 
@@ -22,6 +20,8 @@ I spent two and a half years running applied ML pipelines for nine enterprise re
 Full-stack AI fitness coaching app pairing a Claude-powered agent with real computer vision, a from-scratch RAG pipeline, and a deterministic fitness-fatigue-injury-risk model. Deployed live on Render and Vercel, not a local demo.
 
 **The part I'd talk about in an interview:** ChromaDB's default embedding model truncates at 128 tokens. I found that out by measuring it against real coaching-note lengths, not by reading a warning in the docs, and switched to BAAI/bge-small-en-v1.5 only after confirming it fit the longest real document with margin. The retrieval relevance threshold (0.4 cosine distance) came from measuring where correct, wrong-topic, and unrelated matches actually land, not a tutorial default. Separately, I found and closed a passwordless-auth vulnerability in the Google OAuth flow before public launch, and fixed a CUDA/port-binding cold-start failure on Render by pinning a CPU-only build.
+
+[Live](https://fitness-agent-sigma.vercel.app) (first load can take up to a minute — free-tier backend) · [Code](https://github.com/murugeshmithuna/align)
 
 `FastAPI` `React` `PostgreSQL` `Claude API` `MediaPipe` `ChromaDB` `Google OAuth`
 
@@ -57,22 +57,6 @@ All inference runs locally on one Dell Pro Max with GB10, so raw video never lea
 Department AI agents investigate a modeled company and surface the dependencies a spreadsheet misses. I owned the company model the simulation runs on: 156 typed entities and 121 edges across 9 departments, generated deterministically so every run reproduces byte for byte, with a load-bearing dependency planted outside the edge list so the agents are scored on what they discover.
 
 `Python` `Pydantic` `JSON Schema` `multi-agent LLM simulation`
-
-### AI Study Tutor (in progress)
-
-> Still in early scoping, not shipped yet.
-
-A LangGraph-based tutor combining Bayesian Knowledge Tracing (BKT) for skill modeling, FSRS for spaced-repetition scheduling, and pgvector for retrieval.
-
-`LangGraph` `BKT` `FSRS` `pgvector`
-
-### Boston Housing Regression
-
-> A reference piece, not a headline project.
-
-Classical ML artifact: regression modeling and feature engineering on the Boston housing dataset. Kept around as a foundational-methods reference, not something I lead with.
-
-`Python` `Regression` `Feature Engineering`
 
 ## What I actually use
 
