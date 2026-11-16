@@ -11,7 +11,7 @@ I spent two and a half years running applied ML pipelines for nine enterprise re
 - [ALIGN — AI Fitness Coaching Platform](#align--ai-fitness-coaching-platform)
 - [RxGene: Pre-Prescription Pharmacogenomics Check (Hackachusetts 2026)](#rxgene-pre-prescription-pharmacogenomics-check-hackachusetts-2026)
 - [Site Safety Watch (Dell x NVIDIA GB10 Hackathon)](#site-safety-watch-dell-x-nvidia-gb10-hackathon)
-- [Canary Pact: AI Decision Simulator (Hackathon)](#canary-pact-ai-decision-simulator-hackathon)
+- [Canary Pact: AI Decision Simulator (Glasswing Ventures Hackathon 2026)](#canary-pact-ai-decision-simulator-glasswing-ventures-hackathon-2026)
 
 ### ALIGN — AI Fitness Coaching Platform
 
@@ -50,7 +50,7 @@ All inference runs locally on one Dell Pro Max with GB10, so raw video never lea
 
 `Python` `OpenCV` `vLLM (Qwen3 35B NVFP4)` `SQLite`
 
-### Canary Pact: AI Decision Simulator (Hackathon)
+### Canary Pact: AI Decision Simulator (Glasswing Ventures Hackathon 2026)
 
 > Shows what a proposed cost cut would break before anyone approves it.
 
@@ -62,13 +62,13 @@ Department AI agents investigate a modeled company and surface the dependencies 
 
 **Every day:** Python, FastAPI, React, PostgreSQL, Claude API / LLM tool-use
 
-**AI/ML:** RAG pipelines, embeddings, agent orchestration, pose estimation (MediaPipe), vector DBs (ChromaDB), LangGraph
+**AI/ML:** RAG pipelines, embeddings, agent orchestration, pose estimation (MediaPipe), vector DBs (ChromaDB)
 
 **Comfortable with:** Java, JavaScript, Node.js, SQL, MySQL, MongoDB
 
 ## Before this
 
-Mad Street Den (View.AI), Chennai — AI Product Operations & Quality Analyst, ~2.5 years, owning classification-model quality and delivery for nine enterprise retail clients across seven countries at a 95%+ accuracy bar.
+Mad Street Den (Vue.ai), Chennai — AI Product Operations, Jul 2023 – Nov 2025, owning classification-model quality and delivery for nine enterprise retail clients across seven countries at a 95%+ accuracy bar.
 
 Now: MS in Computer Science, Northeastern University (Khoury College), Jan 2026 – May 2028, and teaching assistant for Human-Centered AI (ARTG 6460).
 
