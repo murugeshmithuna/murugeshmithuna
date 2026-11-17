@@ -1,6 +1,6 @@
 # Hi, I'm Subamithuna Murugesh
 
-> Looking for AI engineering internships/co-ops starting **January 2027**
+> Looking for AI engineering internships/co-ops starting **Spring, Summer or Fall 2027**
 > 📍 Boston, MA · 🎓 MS CS @ Northeastern Khoury (started Spring 2026, graduating May 2028)
 > 🛂 F-1 visa, authorized to work in the US via CPT/OPT for internships and co-ops
 
@@ -36,7 +36,7 @@ Full-stack AI fitness coaching app pairing a Claude-powered agent with real comp
 
 When a clinician adds a medication, RxGene re-checks the patient's existing genetic test results against CPIC guidelines and their current medications. That catches phenoconversion: a patient who is genetically a normal metabolizer but behaves like a poor one because another drug blocks the enzyme. Built by a three-person team in the Biotech & Healthcare track. I owned the engine, APIs, consult agent, tests and UI integration, built with Kiro CLI one scoped brief at a time, and nothing was committed until all 26 hand-reviewed test patients passed.
 
-[Repo](https://github.com/hemnaath04/rxgene) · [Live demo](https://rxgene.vercel.app)
+[Repo](https://github.com/murugeshmithuna/rxgene)
 
 `TypeScript` `React` `CDS Hooks` `openFDA` `Kiro CLI`
 
@@ -46,7 +46,7 @@ When a clinician adds a medication, RxGene re-checks the patient's existing gene
 
 All inference runs locally on one Dell Pro Max with GB10, so raw video never leaves the box. I owned the Watcher, the component that turns a camera stream into clean, de-duplicated hazard events: 18 Python modules covering frame sampling, a motion gate, the local vision client, validation, de-duplication, the SQLite store and the CLI the agent calls.
 
-[Repo](https://github.com/hemnaath04/site-safety-watch)
+[Repo](https://github.com/murugeshmithuna/site-safety-watch)
 
 `Python` `OpenCV` `vLLM (Qwen3 35B NVFP4)` `SQLite`
 
